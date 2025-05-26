@@ -1,17 +1,14 @@
 import { supabase } from './supabaseClient.js'
 
-// Recupera o usuário logado. Redireciona para login se não estiver autenticado.
 async function getUser() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) window.location.href = 'login.html'
   return user
 }
 
-// Elementos do DOM
 const lista = document.getElementById('lista')
 const input = document.getElementById('item')
 
-// Carrega a lista de compras do Supabase
 async function carregarLista() {
   const { data, error } = await supabase.from('lista_compras').select('*')
   if (error) {
