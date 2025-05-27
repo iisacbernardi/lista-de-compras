@@ -1,13 +1,11 @@
-/*---------FONTE---------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*------------VARIÁVEIS GLOBAIS------------------*/
 :root {
-    --cor-primaria: #;
-    --cor-primaria-escura: #;
-    --cor-bg: #f5f7fa;
+    --cor-primaria: #6CD4FF;
+    --cor-primaria-escura: #83858C;
+    --cor-bg: #CFB1B7;
     --cor-branco: #ffffff;
-    --cor-borda: #ddd;
+    --cor-borda: #8B80F9;
     --cor-sombra: rgba(0, 0, 0, 0.15);
     --cor-texto: #333;
 
@@ -16,4 +14,14 @@
     --raio: 0.8rem;
     --transition: 0.3s ease;
 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte);
+    background: ;
 }
