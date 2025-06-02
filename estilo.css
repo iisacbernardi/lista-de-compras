@@ -35,5 +35,18 @@ background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 
 }
 
 .container {
-    
+    background: var(--cor-bg);
+    padding: clamp(2rem, 5vw, 3rem);
+    border-radius: var(--raio);
+    box-shadow: 0 8px 24px var(--cor-sombra);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    color: var(--cor-texto);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
 }
